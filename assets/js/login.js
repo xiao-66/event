@@ -73,8 +73,10 @@ $(function () {
                     return layer.msg('登录失败！');
                 }
                 layer.msg('登录成功！');
+                // 将返回的token值存储在本地存储
                 localStorage.setItem('token',res.token)
                 // console.log(res.token);
+                // 跳转到index.html
                 location.href= '/index.html';
             }
         });
